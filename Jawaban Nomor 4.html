@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jawaban Nomor 4</title>
+    <style>
+      .nama {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        background-color: #eee;
+        padding: 3px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nama">Muhammad Farid Baehaqi</div>
+  </body>
+  <script>
+    // mendeklarasikan variabel jumlah perulangan
+    let count = 0;
+    // melakukan perulangan jika nilai true adalah benar
+    while (true) {
+      // menampilkan confirm dan menyimpan hasilnya ke variable confirmbox
+      let confirmBox = confirm("Apakah anda mau mengulang?");
+      // melakukan pengecekan nilai variabel confirmbox
+      if (confirmBox == true) {
+        count++;
+      } else {
+        // menampilkan jumlah perulangan
+        alert("Perulangan sudah dilakukan sebanyak " + count + " kali.");
+        break;
+      }
+    }
+  </script>
+</html>
